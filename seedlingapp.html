@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://v4-alpha.getbootstrap.com/examples/cover/# -->
+<html lang="en" class="gr__v4-alpha_getbootstrap_com">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="description" content="Seedling Drone Application - High fidelity prototype">
+  <meta name="author" content="">
+  <link rel="icon" href="asset\seedlingicon.ico">
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\bootstrap.slider.min.css" />
+  <!-- http://seiyria.com/bootstrap-slider/ -->
+
+  <!-- <link rel="stylesheet" href="css\bootstrap-theme.min.css">  -->
+
+  <link href="cover.css" rel="stylesheet">
+
+  <title>Seedling App</title>
+
+  <!-- Bootstrap core CSS -->
+
+  <!-- Custom styles for this template -->
+
+</head>
+
+
+<!-- CHECKLIST  -->
+<!-- arrange bootstrap elements to match menu components -->
+<!-- link fontawesome to work with right nav -->
+<!-- make icons panel collapsable -->
+<!-- left toggle menu -->
+<!-- bottom left lens control -->
+<!-- middle record button -->
+<!-- figure out video full height embed -->
+
+<body>
+
+  <!-- <div class="navbar-header"> -->
+  <!-- <div class="row"> -->
+  <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="glyphicon glyphicon-remove"></i></a>
+      <li class="sidebar-brand">
+        <a href="#">Settings</a>
+      </li>
+      <li>
+        <a href="#">Audio</a>
+      </li>
+      <li>
+        <a href="#">Video</a>
+      </li>
+      <li>
+        <a href="#">Storage</a>
+      </li>
+      <li>
+        <a href="#">Drone Status</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <button class="btn  icon-tray collapse pull-right clearfix">
+    <!-- <div class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> -->
+    <!-- <div class="collapse" id="collapseExample"> -->
+<!-- <div class="iconCollapse"> -->
+      <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-plane" aria-hidden="true"> 87%</span>
+      <span class="glyphicon glyphicon-hd-video" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-sound-6-1" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-facetime-video record hidden" aria-hidden="true"> REC</span>
+      <!-- toggle hidden class still needs configured -->
+    <!-- </div> -->
+  </button>
+
+</br>
+</br>
+</br>
+<div class="timestamp hidden">
+<p class="font-style">
+  RECORDING
+  <br/>
+  00:00:00
+  <br/>
+  OCT 6 2017
+</p>
+</div>
+
+  <!-- </div> -->
+  <!-- </div> -->
+  <div class="container-fluid flexMedia">
+    <div class="lensZoom pull-left">
+      <canvas id="canvas" class="center-block" width="100" height="100"></canvas>
+      <input id="ex1" data-slider-id="ex1Slider" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
+      <span class="leftDpad center-block center">Zoom</span>
+    </div>
+    <!-- <div class="recordingIcon pull-left clearfix"> -->
+    <div class="socket">
+      <div class="button"></div>
+    </div>
+
+    <!-- </div> -->
+
+    <div class="FPSicon pull-right">
+      <!-- <div class="btn-group dropup">
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon glyphicon-facetime-video active" aria-hidden="true"></span>
+            60FPS</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button> -->
+      <!-- <form class="form-inline"> -->
+      <label class="mr-sm-2 fontStyle" for="inlineFormCustomSelect"><span class="glyphicon  glyphicon-facetime-video" aria-hidden="true"></span></label>
+      <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+    <option selected>60FPS</option>
+    <option value="1">120FPS</option>
+    <option value="2">160FPS</option>
+    <option value="3">200FPS</option>
+  </select>
+    </div>
+  </div>
+  <!-- end row -->
+
+  <!-- end container-fluid -->
+  <!-- </nav> -->
+  <!-- end nav -->
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <!-- <script src="tether.min.js.download"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js\bootstrap.min.js">
+  </script>
+  <script src="js\bootstrap-slider.min.js"></script>
+  <script src="https://code.createjs.com/createjs-2013.05.14.min.js"></script>
+  <!-- <script src="https://cdn.rawgit.com/hammerjs/touchemulator/master/touch-emulator.js"></script> -->
+
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+
+  <script src="js\app.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="ie10-viewport-bug-workaround.js.download"></script>
+  <script>
+    TouchEmulator();
+  </script>
+
+</body>
+
+</html>

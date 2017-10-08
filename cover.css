@@ -1,0 +1,277 @@
+/*
+ * Globals
+ */
+
+/* Links */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  background-image: url(http://www.youwall.com/papel/forest_wallpaper_8d927.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+}
+
+a, a:focus, a:hover {
+  color: #fff;
+}
+
+
+/* Navigation sidebar */
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  left: 0;
+  width: 250px;
+  background: rgb(0, 0, 0);
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.5s ease-in 0s;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -moz-transition: all 0.5s ease-in 0s;
+  -ms-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+}
+
+.btn {
+  border-color:none !important;
+
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 50px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#menu-toggle {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: gray;
+  margin: 1rem;
+}
+
+#sidebar-wrapper.active {
+  left: 250px;
+  width: 250px;
+
+}
+
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+/*
+ * Base structure
+ */
+
+
+
+font-style {
+  color: white;
+  font: verdana;
+}
+
+.navbar {
+  margin: 0;
+  border-radius: 0;
+}
+
+.icon-tray {
+  background-color: rgba(95, 86, 86, 0.7);
+  display: inline-block;
+}
+
+.icon-tray span {
+  padding: 1rem;
+  color:white;
+}
+
+
+.flexBox {
+ display:flex;
+}
+.timestamp {
+  color: white;
+  font-weight: bold;
+  font-size:medium;
+  font: verdana;
+  text-align: right;
+
+}
+.center {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+#ex1Slider {
+  padding: 1rem;
+}
+
+.circle {
+  border-radius: 100%;
+  height: 50px width:50px;
+  text-align: center;
+  margin: 0 auto;
+  position: right;
+  background-color: rgba(40, 40, 39, 0.45);
+  border: 1px solid rgba(24, 27, 25, 0.45);
+}
+
+canvas {
+  border-radius: 100%;
+  box-sizing: content-box;
+  padding: 1rem;
+  background-color: rgba(180, 181, 181, 0.7);
+}
+
+.flex {
+  display: flex;
+}
+
+.socket {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 4px solid #f3f3f3;
+  position: fixed;
+  bottom: 2rem;
+  right: 49%;
+  left: 49%;
+}
+
+.socket .button {
+  width: 90%;
+  height: 90%;
+  background: red;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 6px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.05, 0.58, 0.32, 1.35);
+  -webkit-transition-timing-function: cubic-bezier(0.05, 0.58, 0.32, 1.35);
+  cursor: pointer;
+}
+
+.socket .button.active {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  top: 30px;
+}
+
+.lensZoom {
+  background-color: rgba(95, 86, 86, 0.7);
+  padding: 1.3rem;
+  border-radius: 10px 10px 10px 0;
+  position: fixed;
+  bottom: 2rem;
+  left: 0;
+}
+
+.recordingIcon {
+/*see socket class*/
+
+}
+
+.FPSicon {
+  background-color: rgba(95, 86, 86, 0.7);
+  padding: 1rem;
+  border-radius: 10px 0 0 10px;
+  position: fixed;
+  bottom: 2rem;
+  right: 0;
+  font-size: 2rem;
+}
+
+
+label {
+  color: white !important;
+}
+
+@media only screen and (max-device-width: 720px) and (-webkit-min-device-pixel-ratio: 1) {
+  .socket {
+    position: fixed;
+    bottom: 2rem;
+    right:1rem;
+    left:unset;
+  }
+  .lensZoom {
+    position:relative;
+    border-radius:0;
+    border:none;
+    border-radius:5px 5px 0 0;
+    bottom:0;
+
+  }
+  .FPSicon {
+    position:relative;
+    border-radius:0;
+    border:none;
+    border-radius:0 5px 0 0;
+    bottom:0;
+  }
+  .flexMedia {
+    display: inline-flex;
+    flex-flow: column;
+    position:fixed;
+    bottom:0;
+    left:0;
+    padding-left:0 !important;
+
+  }
+}
